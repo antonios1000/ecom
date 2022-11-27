@@ -1,0 +1,609 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    padding: 3px;
+}
+
+/* ----------------- HEADER-TOP >>> ----------------- */
+header {
+    display: grid;
+    grid-template-columns: auto;
+    padding-left: 40px;
+}
+
+.header-container .logo h1 a{
+    background-color: black;  
+    font-size: 50px;
+    border-radius: 13px;
+    padding: 10px;
+}
+
+header ul a {
+    font-size: 25px;
+}
+
+.logo h1 {
+    font-size: 20px;
+}
+
+header .header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-container ul {
+    gap: 40px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    position: relative;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+header nav ul li a:hover {
+    color: rgb(0, 9, 99);
+    background-color: rgb(0, 123, 247);
+}
+
+header nav ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: none;
+    background-color: rgb(91, 94, 94);
+}
+
+header nav ul li:hover ul {
+    display: block;
+}
+
+header nav ul li {
+    float: right;
+    padding-top: 10px;
+    padding-right: 50px;
+}
+
+.header-container .active {
+    background-color: rgb(68, 74, 199);
+    padding: 12px;
+    border-radius: 20px;
+}
+
+/* ----------------- HEADER-BOTTOM ----------------- */
+.header-bottom {
+    display: flex;
+    height: 50px;
+}
+
+.header-bottom,
+.column a {
+    font-size: 15px;
+    gap: 30px;
+}
+
+.column {
+    display: flex;
+    align-self: flex-end;
+}
+
+.column a {
+    font-size: 25px;
+    padding-left: 30px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.search-bar,
+form input[type="search"] {
+    padding-left: 150px;
+    font-size: 20px;
+}
+
+.search-bar button {
+    font-size: 15px;
+}
+
+/* ----------------- HEADER-ACCESSORIES-PAGE ----------------- */
+.header-bottom p {
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.header-bottom h4 {
+    padding-left: 30px;
+    color: #2c4f9c;
+    font-size: 20px;
+    font-weight: 200;
+    text-decoration: 8px underline;
+}
+
+/* ----------------- HEADER FINISHED <<< ----------------- */
+
+
+/* ----------------- INDEX MAIN >>> ----------------- */
+.home-container {
+    display: flex;
+    gap: 5px;
+    text-align: center;
+    height: 630px;
+}
+
+a.learn-more {
+    color: #000;
+    text-decoration: none;
+    background-color: rgb(147, 147, 147);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+h2.logo-container {
+    font-size: 80px;
+}
+
+.left-container {
+    flex: 1;
+    padding: 1rem;
+    background-image: url(/images/main.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-text-stroke: 1px blue;
+    color: yellow;
+    font-size: 30px;
+    font-weight: 900;
+    padding-top: 220px;
+}
+
+.right-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    flex: 1;
+    gap: 4px;
+}
+
+.right-container a {
+    -webkit-text-stroke: 1.1px blue;
+    color: yellow;
+    font-size: 45px;
+    font-weight: 900;
+    padding: 90px;
+}
+
+.accessories {
+    background-image: url(/images/Acc_Image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    text-decoration: none;
+}
+
+.desk-chairs {
+    background-image: url(/images/desk_chairs_image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.computer-parts {
+    background-image: url(images/comp_parts_image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.computers {
+    background-image: url(images/computer_image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+/* ----------------- LOGIN / REGISTRATION MAIN ----------------- */
+.login-container,
+.reg-container {
+    background-color: #c8cacb;
+    height: 55vh;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.account-form,
+.reg-form {
+    background-image: url(/images/Computer_Science_HD_Images.webp);
+    background: linear-gradient(to right, #000000, #434343, #666666, #999999, #b7b7b7, #cccccc, #d9d9d9, #efefef, #f3f3f3, #ffffff);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+
+.account-form form,
+.reg-form form {
+    text-align: center;
+    justify-content: center;
+    max-width: 400px;
+    margin: auto;
+    height: 55vh;
+    padding-top: 30px;
+}
+
+.account-form h1,
+.reg-form h1 {
+    border-bottom: 1px grey solid;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+}
+
+.account-form form input[type="text"],
+.reg-form form input[type="text"],
+.reg-form form input[type="email"],
+form input[type="password"] {
+    padding: 10px;
+    margin-bottom: 30px;
+    box-shadow: 4px 2px 3px black;
+    width: 300px;
+}
+
+.account-form,
+form input[type="submit"] {
+    padding: 10px;
+}
+
+.login-container i {
+    background-color: #000;
+    padding: 7px;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.account-form p {
+    border-top: 1px grey solid;
+    padding: 20px 0px;
+    font-weight: 700;
+}
+
+.reg-form button {
+    padding: 10px;
+    width: 110px;
+    margin: 10px;
+}
+
+/* ----------------- ACCESSORIES MAIN ----------------- */
+.acc-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+
+.acc-nav {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.acc-nav h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.acc-nav a {
+    text-decoration: none;
+    color: #000;
+    margin: 10px 0;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.acc-banner-acc {
+    background-image: url(/images/banner.png);
+}
+
+.acc-split .acc-banner-prts {
+    background-image: url(/images/banner1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap: 995px;
+}
+
+.acc-banner p {
+    padding: 70px;
+}
+
+#banner1,
+#banner2:hover {
+    float: left;
+    font-size: 50px;
+    font-weight: 900;
+    cursor: pointer;
+    color: rgb(89, 87, 87);
+}
+
+#banner2,
+#banner2:hover {
+    float: right;
+    font-size: 50px;
+    font-weight: 900;
+    cursor: pointer;
+    color: rgb(89, 87, 87);
+}
+
+.acc-split {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.acc-banner {
+    background-image: url(/images/banner.png);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px solid #000;
+}
+
+.acc-items {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.merchandise-accs {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 40px;
+}
+
+.item-container {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    padding: 20px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item-container img {
+    width: 250px;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.cart-logged-off-container {
+    background: linear-gradient(to right, #000000, #434343, #5c5c5c, #999999, #b7b7b7, #cccccc, #d9d9d9, #efefef, #f3f3f3, #ffffff);
+    display: flex;
+    height: 58vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cart-logged-off h1 h2 {
+    background-color: #c8cacb;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 15px;
+    padding-top: 100px;
+}
+
+.cart-logged-off a {
+    font-size: 30px;
+}
+
+.cart-message,
+.cart-message h2 {
+    height: 70px;
+    text-align: center;
+    justify-items: center;
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+/*zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz*/
+.cart-details {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.acc-items-cart {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+}
+
+.merchandise-accs-cart {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-container-cart {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+}
+
+.product-container-cart {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-container-cart img {
+    width: 100px;
+}
+
+.add-quantity,
+.subtract-quantity,
+.remove-quantity {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.add-quantity:hover,
+.subtract-quantity:hover,
+.remove-quantity:hover {
+    color: blue;
+}
+
+.total-price-container {
+    padding-bottom: 500px;
+    text-align: center;
+}
+
+.total-price-container h2 {
+    font-size: 30px;
+    height: 40px;
+    text-align: left;
+    width: 400px;
+}
+
+.price-container button {
+    width: 150px;
+    background-color: rgb(192, 192, 33);
+    padding: 20px 40px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.checkout-button button {
+    background-color: #3c0289;
+    width: 50px;
+}
+
+.checkout-button:hover {
+    background-color: blue;
+    color: white;
+}
+
+.checkout-button {
+    width: 100%;
+}
+
+/* ----------------- MAIN COMPLETE <<< ----------------- */
+
+
+/* ----------------- FOOTER >>> ----------------- */
+footer {
+    background-image: linear-gradient(rgb(205, 205, 205), rgb(30, 30, 30));
+    height: auto;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    font-size: 20px;
+}
+
+#facebook,
+#facebook:hover {
+    color: #3b5998;
+    cursor: pointer;
+}
+
+#twitter,
+#twitter:hover {
+    color: #00aced;
+    cursor: pointer;
+}
+
+#instagram,
+#instagram:hover {
+    color: #517fa4;
+    cursor: pointer;
+}
+
+#youtube,
+#youtube:hover {
+    color: #bb0000;
+    cursor: pointer;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center;
+    gap: 170px;
+}
+
+.contact-content {
+    padding: 20px;
+}
+
+.contact-content li {
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 900;
+}
+
+.contact-content a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.contact-content b {
+    text-decoration: none;
+    color: #000;
+}
+
+/* ----------------- FOOTER-ACCESSORIES COMPLETE<<< ----------------- */
